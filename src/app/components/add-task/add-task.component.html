@@ -1,13 +1,1 @@
-<form (ngSubmit)="onSubmit()">
-  <div class="form-control">
-    <label for="text">Task</label>
-    <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Add Task">
-  </div>
-
-  <div class="form-control">
-    <label for="day">Date & Time</label>
-    <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="Add Date & Time">
-  </div>
-
-  <input type="submit" value="Save Task" class="btn btn-block"/>
-</form>
+<app-task-form [taskData]="taskData" (submitTask)="onSubmit($event)"></app-task-form>

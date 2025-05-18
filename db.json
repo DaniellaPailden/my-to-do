@@ -1,24 +1,31 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "text": "Doctors Appointment",
-      "day": "May 5th at 1:30pm"
+      "id": "1536",
+      "text": "task 1",
+      "day": "5-8-2025",
+      "time": "3:00 PM",
+      "completed": false,
+      "priority": "High",
+      "dateAdded": "2025-05-18T06:40:53.336Z"
     },
     {
-      "id": "2",
-      "text": "Meeting at School",
-      "day": "May 6th at 2:30pm"
+      "id": "1959",
+      "text": "task 2 edited",
+      "day": "5-24-2025",
+      "time": "11:40 PM",
+      "completed": true,
+      "priority": "Medium",
+      "dateAdded": "2025-05-18T06:41:09.985Z"
     },
     {
-      "id": "3",
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm"
-    },
-    {
-      "id": "46e2",
-      "text": "Try Task",
-      "day": "Try date"
+      "id": "2308",
+      "text": "new assignment2133",
+      "day": "3-31-2025",
+      "time": "6:00 AM",
+      "completed": true,
+      "priority": "Medium",
+      "dateAdded": "2025-03-11T23:22:16.502Z"
     }
   ]
 }

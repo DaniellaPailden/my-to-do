@@ -10,23 +10,31 @@ const httpOptions = {
 };
 
 @Injectable({
-  providedIn: 'root', 
+  providedIn: 'root',
 })
 export class TaskService {
   private apiUrl = 'http://localhost:5000/tasks';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.apiUrl);
   }
 
-  deleteTask(task: Task): Observable<Task> {
-    const url = `${this.apiUrl}/${task.id}`;
-    return this.http.delete<Task>(url);
+  deleteTask(id: string): Observable<Task> {
+    return this.http.delete<Task>(`${this.apiUrl}/${id}`);
   }
-
-  addTask(task: Task): Observable<Task> {
+  
+  addTask(task: Task): Observable<Task>{
     return this.http.post<Task>(this.apiUrl, task, httpOptions);
   }
+
+  updateTask(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.put<Task>(url, task, {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    });
+  }
+  
+  
 }

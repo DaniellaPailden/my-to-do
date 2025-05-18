@@ -1,5 +1,9 @@
 export interface Task {
-  id?: number;
-  text: string;
-  day: string;
+    id: string;
+    text: string;
+    day: string; 
+    completed: boolean;
+    priority: string;
+    time: string;
+    dateAdded?: string;
 }
