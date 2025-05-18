@@ -8,7 +8,9 @@ import { MatButtonModule } from '@angular/material/button';
   selector: 'app-delete-dialog',
   standalone: true,
   imports: [CommonModule, MatButtonModule], 
+  templateUrl: './delete-dialog.component.html',
 })
+
 export class DeleteDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<DeleteDialogComponent>,

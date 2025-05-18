@@ -209,6 +209,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: space-between;
   width: 100%;
 }
+.task-header > span {
+  flex: 1;
+  text-align: left;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
 
 .task-header input {
   margin-right: 10px; 
@@ -216,16 +223,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .task-icons {
   display: flex;
-  gap: 10px; 
 }
 
 .completed {
   color: gray;
+  text-decoration: line-through; 
 }
 
 .day-time {
   display: flex;
-  justify-content: center; 
+  justify-content: flex-start; /* Change from center to flex-start */
   align-items: center;
   gap: 10px;
   margin-top: 5px;
@@ -235,7 +242,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .task-time {
   font-size: 18px;
   color: #555;
-  text-align: center;
+  text-align: left;
   margin-right: 12px;
 }
 
@@ -302,7 +309,7 @@ option{
 }
 
 .sort-container{
-  display:flex;
+  display: inline;
   justify-content: flex-start;
 }
 .sort-dropdown {
@@ -314,4 +321,19 @@ option{
   width: 100%;
   border: 1px solid #ccc; 
   margin: 16px 0;
+}
+
+.task-list-title{
+  margin-bottom: 35px;
+}
+
+.task-list-header {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-list-header .sort-container {
+  margin-left: auto;
 }

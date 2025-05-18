@@ -29,10 +29,9 @@ export class TaskFormComponent {
   onSubmit() {
     if (this.taskData.day instanceof Date) {
       const selectedDate = this.taskData.day;
-      this.taskData.day = `${selectedDate.getMonth() + 1}-${selectedDate.getDate()}-${selectedDate.getFullYear()}`; //formatting date
+      this.taskData.day = `${selectedDate.getMonth() + 1}-${selectedDate.getDate()}-${selectedDate.getFullYear()}`;   //formatting date
+      
     }
-
-    console.log("Task Data Before Emitting:", this.taskData); //for debugging
 
     this.submitTask.emit(this.taskData);
   }

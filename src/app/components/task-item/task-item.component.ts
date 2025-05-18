@@ -10,7 +10,7 @@ import { TaskService } from '../../services/task.service';
 @Component({
   selector: 'app-task-item',
   standalone: true,
-  imports: [FontAwesomeModule, NgStyle, NgClass, FormsModule], 
+  imports: [FontAwesomeModule, NgClass, FormsModule], 
   templateUrl: './task-item.component.html',
   styleUrls: ['./task-item.component.css'] 
 })
@@ -25,7 +25,7 @@ export class TaskItemComponent {
   @Output() taskCompleted: EventEmitter<Task> = new EventEmitter();
 
   faTimes = faTimes;
-  faEdit = faEdit; //icons
+  faEdit = faEdit; 
 
   onDelete(task: any){
     this.onDeleteTask.emit(task);

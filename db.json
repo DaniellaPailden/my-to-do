@@ -14,7 +14,7 @@
       "text": "task 2 edited",
       "day": "5-24-2025",
       "time": "11:40 PM",
-      "completed": true,
+      "completed": false,
       "priority": "Medium",
       "dateAdded": "2025-05-18T06:41:09.985Z"
     },
@@ -23,7 +23,7 @@
       "text": "new assignment2133",
       "day": "3-31-2025",
       "time": "6:00 AM",
-      "completed": true,
+      "completed": false,
       "priority": "Medium",
       "dateAdded": "2025-03-11T23:22:16.502Z"
     }

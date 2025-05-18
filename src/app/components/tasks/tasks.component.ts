@@ -38,7 +38,8 @@ export class TasksComponent {
   ) {}
 
   ngOnInit(): void {
-    this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks)); //update once data is received
+    //update once data is received
+    this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks)); 
   }
 
   deleteTask(task: Task) {

@@ -1,5 +1,11 @@
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
-<app-sort-tasks (sortChange)="onSortChange($event)"></app-sort-tasks>
+
+<hr class="section-divider">
+
+<div class="task-list-header">
+  <h1 class="task-list-title">Task Lists</h1>
+  <app-sort-tasks (sortChange)="onSortChange($event)"></app-sort-tasks>
+</div>
 
 <app-task-item 
   *ngFor="let task of tasks" 
