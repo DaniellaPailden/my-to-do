@@ -308,6 +308,15 @@ option{
   width: 100%;
 }
 
+.snackbar-content .undo-btn {
+  color: #007bff;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
 .sort-container{
   display: inline;
   justify-content: flex-start;
